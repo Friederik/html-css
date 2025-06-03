@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Inter_18pt-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Inter_24pt-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Inter_18pt-Bold.woff2") format("woff2");
+}
+.btn {
+  background: #000AFF;
+  color: white;
+  font-size: 24px;
+  padding-block: 1rem;
+  padding-inline: 2.5rem;
+}
+
+body, button, input {
+  font-family: "Inter", sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */
