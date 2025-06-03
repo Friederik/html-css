@@ -1,8 +1,43 @@
 @use '../base/variables' as c
 
 .btn
-    background: c.$brandBlue
+    background-color: c.$brandBlue
     color: white
     font-size: 24px
     padding-block: 1rem
     padding-inline: 2.5rem
+    border: 0
+    border-radius: 0.5rem
+    border: 3px solid transparent
+
+    @media (hover: hover)
+        &:hover
+            background-color: c.$brandBlueHover
+
+    &:active
+        background-color: c.$brandBlueActive
+
+    &--white
+        background: white
+        color: black
+        border-color: black
+
+        @media (hover: hover)
+            &:hover
+                background-color: c.$brandLightGray
+
+        &:active
+            background-color: c.$brandLowLightGray
+
+.container
+    width: 100vw
+    padding-inline: 4vw
+
+.header
+    background-color: white
+    box-shadow: 5px 5px 10px black
+    padding: 0.5rem 4vw
+    border-bottom-left-radius: 0.5rem
+    border-bottom-right-radius: 0.5rem
+    position: sticky
+    top: 0

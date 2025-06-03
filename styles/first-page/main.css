@@ -2,26 +2,70 @@
   font-family: "Inter";
   font-weight: 400;
   font-style: normal;
-  src: url("../fonts/Inter_18pt-Regular.woff2") format("woff2");
+  src: url("/assets/first-page/fonts/Inter_18pt-Regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-weight: 600;
   font-style: normal;
-  src: url("../fonts/Inter_24pt-SemiBold.woff2") format("woff2");
+  src: url("/assets/first-page/fonts/Inter_24pt-SemiBold.woff2") format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-weight: 700;
   font-style: normal;
-  src: url("../fonts/Inter_18pt-Bold.woff2") format("woff2");
+  src: url("/assets/first-page/fonts/Inter_18pt-Bold.woff2") format("woff2");
 }
 .btn {
-  background: #000AFF;
+  background-color: #000AFF;
   color: white;
   font-size: 24px;
   padding-block: 1rem;
   padding-inline: 2.5rem;
+  border: 0;
+  border-radius: 0.5rem;
+  border: 3px solid transparent;
+}
+@media (hover: hover) {
+  .btn:hover {
+    background-color: rgb(25, 50, 255);
+  }
+}
+.btn:active {
+  background-color: rgb(37, 62, 255);
+}
+.btn--white {
+  background: white;
+  color: black;
+  border-color: black;
+}
+@media (hover: hover) {
+  .btn--white:hover {
+    background-color: #EEEEEE;
+  }
+}
+.btn--white:active {
+  background-color: rgb(222, 222, 222);
+}
+
+.container {
+  width: 100vw;
+  padding-inline: 4vw;
+}
+
+.header {
+  background-color: white;
+  box-shadow: 5px 5px 10px black;
+  padding: 0.5rem 4vw;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  position: sticky;
+  top: 0;
+}
+
+.hero {
+  height: 100dvh;
+  background-color: white;
 }
 
 body, button, input {
