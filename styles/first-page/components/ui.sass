@@ -13,6 +13,7 @@
     @media (hover: hover)
         &:hover
             background-color: c.$brandBlueHover
+            cursor: pointer
 
     &:active
         background-color: c.$brandBlueActive
@@ -29,15 +30,48 @@
         &:active
             background-color: c.$brandLowLightGray
 
+.btn-container
+    display: flex
+    flex-direction: column
+    gap: 1rem
+
+    @media (min-width: 1024px)
+        flex-direction: row
+
 .container
-    width: 100vw
-    padding-inline: 4vw
+    width: 92vw
+    margin-inline: auto
+
+    @media (min-width: 1024px)
+        width: 86vw
 
 .header
     background-color: white
     box-shadow: 5px 5px 10px black
-    padding: 0.5rem 4vw
+
     border-bottom-left-radius: 0.5rem
     border-bottom-right-radius: 0.5rem
     position: sticky
     top: 0
+
+    &__logo
+        transition: all 0.2s ease-in-out
+        transform-origin: left center
+        margin: 0.5rem 4vw
+
+        @media (min-width: 1024px)
+            margin: 1rem 7vw
+            transform: scale(1.5)
+
+.objection-points
+    list-style-image: url('/assets/first-page/images/CheckMark.svg')
+    list-style-position: inside
+    font-size: 1.25rem
+    gap: 1rem
+    display: none
+
+    @media (min-width: 1024px)
+        display: flex
+
+    &__point
+        white-space: nowrap
