@@ -38,12 +38,27 @@
     @media (min-width: 1024px)
         flex-direction: row
 
+.section
+    background-color: white
+
+    &--gray
+        background-color: c.$brandLightGray
+
 .container
     padding-top: 2rem
     padding-inline: 4vw
 
     @media (min-width: 1024px)
-        padding-inline: 7vw
+        padding-inline: 10vw
+
+    &--list
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-block: 2rem
+
+        @media (min-width: 1024px)
+            padding-block: 15vh
 
 .header
     background-color: white
@@ -76,3 +91,49 @@
 
     &__point
         white-space: nowrap
+
+.block
+    &__header
+        font-size: 2rem
+        font-weight: 600
+        line-height: 120%
+
+        @media (min-width: 1024px)
+            font-size: 2.5rem
+            font-weight: 700
+
+    &__items
+        display: grid
+        grid-template-columns: 1fr
+        justify-content: space-between
+        justify-items: center
+        padding-top: 2rem
+        gap: 2rem
+        width: 100%
+        font-size: 1.25rem
+
+        @media (min-width: 1024px)
+            grid-template-columns: repeat(3, 1fr)
+            gap: 4vw
+
+    &__item
+        max-width: 320px
+
+        @media (min-width: 1024px)
+            // max-width: 400px
+
+            &--start
+                justify-self: start
+
+            &--center
+                justify-self: center
+
+            &--end
+                justify-self: end
+
+    &__text
+        color: c.$brandDarkGray
+        line-height: 120%
+
+        &--gray
+            color: c.$brandMediumGray
