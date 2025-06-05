@@ -1,14 +1,14 @@
 @use '../base/variables' as c
 
 .hero
-    background-color: white
-    display: flex
-    justify-content: space-between
-    flex-direction: column
-    padding-top: 2rem
+    &__container
+        background-color: white
+        display: flex
+        justify-content: space-between
+        flex-direction: column
 
-    @media (min-width: 1024px)
-        flex-direction: row
+        @media (min-width: 1024px)
+            flex-direction: row
 
     &__info
         max-width: 600px
@@ -23,6 +23,7 @@
     &__h1
         font-size: 2.25rem
         font-weight: 700
+        line-height: 120%
 
         @media (min-width: 1024px)
             font-size: 4rem
@@ -30,9 +31,8 @@
     &__h2
         font-size: 1.5rem
         font-weight: 600
+        line-height: 120%
         color: c.$brandMediumGray
-
-    // &__rating
 
     &__image
         max-width: 600px
@@ -40,3 +40,15 @@
         object-fit: contain
         width: 100%
         height: auto
+
+.hero-rating
+    align-items: center
+    gap: 1rem
+    display: none
+
+    @media (min-width: 1024px)
+        display: flex
+
+    &__score
+        font-weight: 600
+        font-size: 1.5rem

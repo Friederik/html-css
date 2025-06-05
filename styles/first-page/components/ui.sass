@@ -39,11 +39,11 @@
         flex-direction: row
 
 .container
-    width: 92vw
-    margin-inline: auto
+    padding-top: 2rem
+    padding-inline: 4vw
 
     @media (min-width: 1024px)
-        width: 86vw
+        padding-inline: 7vw
 
 .header
     background-color: white
@@ -53,14 +53,15 @@
     border-bottom-right-radius: 0.5rem
     position: sticky
     top: 0
+    padding-top: 0 // Отменяем padding от container
 
     &__logo
         transition: all 0.2s ease-in-out
         transform-origin: left center
-        margin: 0.5rem 4vw
+        margin-block: 0.5rem
 
         @media (min-width: 1024px)
-            margin: 1rem 7vw
+            margin-block: 1rem
             transform: scale(1.5)
 
 .objection-points
