@@ -102,6 +102,30 @@
             font-size: 2.5rem
             font-weight: 700
 
+        &--second
+            font-size: 1.5rem
+
+            @media (min-width: 1024px)
+                font-size: 1.75rem
+                font-weight: 600
+
+    &__items-with-image
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        // align-items: center
+
+        @media (min-width: 1024px)
+            flex-direction: row
+
+    &__image
+        max-width: 600px
+        margin-inline: auto
+        object-fit: contain
+        width: 100%
+        height: auto
+
     &__items
         display: grid
         grid-template-columns: 1fr
@@ -118,9 +142,11 @@
 
     &__item
         max-width: 320px
+        display: flex
+        flex-direction: column
+        gap: 2rem
 
         @media (min-width: 1024px)
-            // max-width: 400px
 
             &--start
                 justify-self: start
@@ -133,7 +159,60 @@
 
     &__text
         color: c.$brandDarkGray
-        line-height: 120%
+        line-height: 150%
 
         &--gray
             color: c.$brandMediumGray
+
+    &__icon
+        max-width: 48px
+        height: auto
+
+.block-list
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    padding-top: 2rem
+    gap: 2.5rem
+
+    &__item
+        display: flex
+        flex-direction: column
+        gap: 1.5rem
+
+    &__header
+        padding-left: 0.5rem
+        line-height: 120%
+        font-size: 1.5rem
+        font-weight: 600
+
+        @media (min-width: 1024px)
+            font-size: 2rem
+
+    &__text
+        line-height: 120%
+        font-size: 1.25rem
+        max-width: 600px
+
+.profile
+    display: flex
+    align-items: center
+    gap: 1.5rem
+
+    &__info
+        display: flex
+        flex-direction: column
+        line-height: 120%
+        color: c.$brandMediumGray
+
+    &__name
+        font-size: 1.5rem
+        font-weight: 700
+        padding-bottom: 0.5rem
+
+    &__role
+        font-weight: 700
+        font-size: 1rem
+
+    &__company
+        font-size: 1rem
