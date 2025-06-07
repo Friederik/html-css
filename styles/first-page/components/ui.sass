@@ -114,7 +114,18 @@
         display: flex
         flex-direction: column
         justify-content: space-between
-        // align-items: center
+
+        @media (min-width: 1024px)
+            flex-direction: row
+
+    &__items-card
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding-top: 2rem
+        gap: 1rem
 
         @media (min-width: 1024px)
             flex-direction: row
@@ -216,3 +227,51 @@
 
     &__company
         font-size: 1rem
+
+.card
+    border: 1px solid c.$brandMediumGray
+    border-radius: 1rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-block: 2rem
+    gap: 1.5rem
+    background-color: white
+    padding-inline: 3rem
+
+    &--active
+        border: 5px solid c.$brandBlue
+
+    &__header
+        font-size: 1.5rem
+        font-weight: 600
+        line-height: 120%
+        text-transform: uppercase
+        color: c.$brandMediumGray
+
+    &__price
+        line-height: 120%
+        font-weight: 700
+        font-size: 4rem
+
+    &__description
+        font-size: 1.5rem
+        font-weight: 600
+        line-height: 120%
+        color: c.$brandMediumGray
+        text-align: center
+        max-width: 250px
+
+    &__points
+        list-style-image: url('/assets/first-page/images/CheckMark.svg')
+        font-size: 1.25rem
+
+    &__point-text
+        font-size: 0.75rem
+        line-height: 120%
+
+        @media (min-width: 1024px)
+            font-size: 1rem
+
+    &__btn
+        font-weight: 600

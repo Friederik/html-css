@@ -156,6 +156,20 @@
     flex-direction: row;
   }
 }
+.block__items-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  gap: 1rem;
+}
+@media (min-width: 1024px) {
+  .block__items-card {
+    flex-direction: row;
+  }
+}
 .block__image {
   max-width: 600px;
   margin-inline: auto;
@@ -259,6 +273,57 @@
 }
 .profile__company {
   font-size: 1rem;
+}
+
+.card {
+  border: 1px solid #5F5F5F;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 2rem;
+  gap: 1.5rem;
+  background-color: white;
+  padding-inline: 3rem;
+}
+.card--active {
+  border: 5px solid #000AFF;
+}
+.card__header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #5F5F5F;
+}
+.card__price {
+  line-height: 120%;
+  font-weight: 700;
+  font-size: 4rem;
+}
+.card__description {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 120%;
+  color: #5F5F5F;
+  text-align: center;
+  max-width: 250px;
+}
+.card__points {
+  list-style-image: url("/assets/first-page/images/CheckMark.svg");
+  font-size: 1.25rem;
+}
+.card__point-text {
+  font-size: 0.75rem;
+  line-height: 120%;
+}
+@media (min-width: 1024px) {
+  .card__point-text {
+    font-size: 1rem;
+  }
+}
+.card__btn {
+  font-weight: 600;
 }
 
 .hero__container {
