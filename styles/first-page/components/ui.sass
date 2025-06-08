@@ -44,6 +44,10 @@
     &--gray
         background-color: c.$brandLightGray
 
+    &--blue
+        background-color: c.$brandBlue
+        color: white
+
 .container
     padding-top: 2rem
     padding-inline: 4vw
@@ -69,6 +73,18 @@
     position: sticky
     top: 0
     padding-top: 0 // Отменяем padding от container
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &__ref
+        display: block
+        text-decoration: none
+        font-size: 1.25rem
+        color: inherit
+
+        &:visited
+            color: inherit
 
     &__logo
         transition: all 0.2s ease-in-out
@@ -76,7 +92,7 @@
         margin-block: 0.5rem
 
         @media (min-width: 1024px)
-            margin-block: 1rem
+            margin-block: 1.5rem
             transform: scale(1.5)
 
 .objection-points
@@ -86,8 +102,14 @@
     gap: 1rem
     display: none
 
+    &--under
+        padding-block: 2rem
+        display: flex
+        flex-direction: column
+
     @media (min-width: 1024px)
         display: flex
+        flex-direction: row
 
     &__point
         white-space: nowrap
@@ -97,6 +119,7 @@
         font-size: 2rem
         font-weight: 600
         line-height: 120%
+        text-align: center
 
         @media (min-width: 1024px)
             font-size: 2.5rem
@@ -117,6 +140,13 @@
 
         @media (min-width: 1024px)
             flex-direction: row
+
+        &--costil
+            padding-top: 2rem
+            flex-direction: column-reverse
+
+            @media (min-width: 1024px)
+                flex-direction: row
 
     &__items-card
         width: 100%
@@ -175,6 +205,12 @@
         &--gray
             color: c.$brandMediumGray
 
+    &__paragraph
+        font-size: 1.25rem
+        line-height: 120%
+        align-self: center
+        max-width: 800px
+
     &__icon
         max-width: 48px
         height: auto
@@ -186,6 +222,17 @@
     padding-top: 2rem
     gap: 2.5rem
 
+    &--checklist
+        list-style: none
+
+        li
+            display: flex
+            flex-direction: row
+            align-items: flex-start
+
+            &::before
+                content: "-"
+
     &__item
         display: flex
         flex-direction: column
@@ -196,6 +243,7 @@
         line-height: 120%
         font-size: 1.5rem
         font-weight: 600
+        text-align: center
 
         @media (min-width: 1024px)
             font-size: 2rem
@@ -204,6 +252,9 @@
         line-height: 120%
         font-size: 1.25rem
         max-width: 600px
+
+        &--bold
+            font-weight: 600
 
 .profile
     display: flex
@@ -275,3 +326,27 @@
 
     &__btn
         font-weight: 600
+
+.stats
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding-block: 2rem
+    gap: 2.5rem
+
+    @media (min-width: 1024px)
+        flex-direction: row
+
+    &__item
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 2rem
+
+    &__number
+        font-size: 3.75rem
+        font-weight: 700
+
+    &__header
+        font-size: 1.5rem
