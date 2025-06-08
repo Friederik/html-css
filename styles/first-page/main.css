@@ -2,19 +2,19 @@
   font-family: "Inter";
   font-weight: 400;
   font-style: normal;
-  src: url("../../../assets/first-page/fonts/Inter_18pt-Regular.woff2") format("woff2");
+  src: url("../../assets/first-page/fonts/Inter_18pt-Regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-weight: 600;
   font-style: normal;
-  src: url("../../../assets/first-page/fonts/Inter_24pt-SemiBold.woff2") format("woff2");
+  src: url("../../assets/first-page/fonts/Inter_24pt-SemiBold.woff2") format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-weight: 700;
   font-style: normal;
-  src: url("../../../assets/first-page/fonts/Inter_18pt-Bold.woff2") format("woff2");
+  src: url("../../assets/first-page/fonts/Inter_18pt-Bold.woff2") format("woff2");
 }
 .btn {
   background-color: #000AFF;
@@ -110,7 +110,7 @@
 }
 
 .objection-points {
-  list-style-image: url("../../../assets/first-page/images/CheckMark.svg");
+  list-style-image: url("../../assets/first-page/images/CheckMark.svg");
   list-style-position: inside;
   font-size: 1.25rem;
   gap: 1rem;
@@ -310,7 +310,7 @@
   max-width: 250px;
 }
 .card__points {
-  list-style-image: url("../../../assets/first-page/images/CheckMark.svg");
+  list-style-image: url("../../assets/first-page/images/CheckMark.svg");
   font-size: 1.25rem;
 }
 .card__point-text {
