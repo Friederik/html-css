@@ -1,0 +1,2 @@
+sass --watch styles/first-page/input.sass styles/first-page/main.css
+sass --watch styles/second-page/input.sass styles/second-page/main.css
