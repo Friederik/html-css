@@ -1,3 +1,49 @@
+.button {
+  background-color: #BAEF00;
+  padding: 0.5rem 2rem;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+@media (hover: hover) {
+  .button:hover {
+    background-color: #A3D200;
+    cursor: pointer;
+  }
+}
+.button:active {
+  background-color: #D9FF56;
+}
 
+.input {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 2px solid #E3E3E3;
+}
+.input:focus {
+  outline-color: #BAEF00;
+}
+
+.ref {
+  padding: 0.2rem;
+}
+.ref:link {
+  color: #263238;
+}
+.ref:visited {
+  color: #A3D200;
+}
+@media (hover: hover) {
+  .ref:hover {
+    background-color: #BAEF00;
+  }
+}
+.ref:active {
+  color: #D9FF56;
+  background-color: transparent;
+}
+
+body {
+  font-size: 16px;
+}
 
 /*# sourceMappingURL=main.css.map */

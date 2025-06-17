@@ -1,0 +1,40 @@
+@use '../base/variables' as c
+
+.button
+    background-color: c.$brandBase
+    padding: 0.5rem 2rem
+    border: 2px solid transparent
+    border-radius: 10px
+
+    @media (hover: hover)
+        &:hover
+            background-color: c.$brandBaseHover
+            cursor: pointer
+
+    &:active
+        background-color: c.$brandBaseActive
+
+.input
+    padding: 0.5rem 1rem
+    border-radius: 10px
+    border: 2px solid c.$brandStroke
+
+    &:focus
+        outline-color: c.$brandBase
+
+.ref
+    padding: 0.2rem
+
+    &:link
+        color: c.$brendBlack
+
+    &:visited
+        color: c.$brandBaseHover
+
+    @media (hover: hover)
+        &:hover
+            background-color: c.$brandBase
+
+    &:active
+        color: c.$brandBaseActive
+        background-color: transparent
